@@ -2,18 +2,10 @@
 
 rm -fr CMake*
 
-# Root folder
-PROGRAM_ROOT=$HOME/GitRepository/UtilityFunctionLibrary
-
-if [ -L "$PROGRAM_ROOT" ]
-then
-  mkdir -p "$PROGRAM_ROOT"
-fi
-
 # Source
-SOURCE_DIR=$PROGRAM_ROOT/Source/
+SOURCE_DIR=../Source/
 # Install
-INSTALL_DIR=$PROGRAM_ROOT/Install/
+INSTALL_DIR=../Install/
 
 # Cmake commands
 cmake \
