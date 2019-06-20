@@ -1,0 +1,24 @@
+#!/bin/sh
+
+rm -fr CMake*
+
+# Root folder
+PROGRAM_ROOT=$HOME/GitRepository/UtilityFunctionLibrary
+
+if [ -L "$PROGRAM_ROOT" ]
+then
+  mkdir -p "$PROGRAM_ROOT"
+fi
+
+# Source
+SOURCE_DIR=$PROGRAM_ROOT/Source/
+# Install
+INSTALL_DIR=$PROGRAM_ROOT/Install/
+
+# Cmake commands
+cmake \
+-D CMAKE_INSTALL_PREFIX:PATH=$INSTALL_DIR \
+-D CMAKE_CXX_FLAGS:STRING="-g -O3 -march=native -std=c++0x -fopenmp -pedantic -fno-var-tracking -fprofile-arcs -ftest-coverage " \
+-D CMAKE_C_FLAGS:STRING="-g -O3 -march=native -std=c++0x -fopenmp -pedantic -fno-var-tracking -fprofile-arcs -ftest-coverage " \
+\
+$SOURCE_DIR
