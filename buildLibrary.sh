@@ -30,4 +30,4 @@ fi
 
   ./configure-utility-function-library-cpp
 
-  echo -e " \n If the CMake script compiled successfully go to the build folder and run make. \n"
+  echo -e " \n !! If the CMake script compiled successfully go to the build folder and run make. \n"

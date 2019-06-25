@@ -14,3 +14,8 @@ cmake \
 -D CMAKE_C_FLAGS:STRING="-g -O3 -march=native -std=c++0x -fopenmp -pedantic -fno-var-tracking -fprofile-arcs -ftest-coverage " \
 \
 $SOURCE_DIR
+
+echo "\n  !! After library finishes compiling you can add the library to your system path using " 
+echo "    LD_LIBRARY_PATH=\"\$LD_LIBRARY_PATH:<location of the library>\""
+echo "    export LD_LIBRARY_PATH"
+echo "  In .bashrc or other shell script."
