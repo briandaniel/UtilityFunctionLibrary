@@ -15,7 +15,7 @@ cmake \
 \
 $SOURCE_DIR
 
-echo "\n  !! After library finishes compiling you can add the library to your system path using " 
+echo "\n! After library finishes compiling you can add the library to your system path using " 
 echo "    LD_LIBRARY_PATH=\"\$LD_LIBRARY_PATH:<location of the library>\""
 echo "    export LD_LIBRARY_PATH"
-echo "  In .bashrc or other shell script."
+echo "    in .bashrc or other shell configuration file."

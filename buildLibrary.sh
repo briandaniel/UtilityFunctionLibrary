@@ -1,6 +1,7 @@
 #!/bin/bash
 
 
+
 # Root folder
 PROGRAM_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
@@ -22,12 +23,12 @@ else
  
 fi
 
-  echo -e "\n  Running CMake configuration script: "
+# Run the CMake configuration script
 
-  cd $PROGRAM_ROOT/Build
+echo -e "\n  Running CMake configuration script: "
 
-  echo -e "  $PROGRAM_ROOT/Build/configure-utility-function-library-cpp \n \n"
+cd $PROGRAM_ROOT/Build
 
-  ./configure-utility-function-library-cpp
+./configure*
 
-  echo -e " \n !! If the CMake script compiled successfully go to the build folder and run make. \n"
+echo -e " \n !! If the CMake script compiled successfully go to the build folder and run make. \n"
