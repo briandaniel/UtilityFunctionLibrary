@@ -89,5 +89,7 @@ void printMatlab4DArraySimple( ofstream &fileID, string key, double **** values,
 // Prints a matlab formatted 1D array from a 1D vector of doubles (doesnt print)
 void printMatlab1DArray( ofstream &fileID, string key, vector<double> & values);
 
+// Prints a matlab formatted 2D array from a 2D vector of doubles (doesnt print)
+void printMatlab2DArray( ofstream &fileID, string key, vector<vector<double>> & values  );
 
 #endif /* SOURCE_IMPORTEXPORT_HPP_ */
